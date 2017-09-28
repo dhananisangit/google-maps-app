@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Google Places API</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div class="actions">
+            <div class="button">
+                <label style="float:left;">Where:</label>
+                <input id="gmap_where" type="text" name="gmap_where" placeholder="e.g. san francisco" />
+                <br/><br/>
+                <button style="background-color:#d7e5f5;" onclick="findAddress(); return false;">Search</button>
+                <br/><br/>
+                <div id="type">
+                    <label for="gmap_type">Type:</label>
+                    <select id="gmap_type">
+                        <option value="atm">atm</option>
+                        <option value="bar">bar</option>
+                        <option value="cafe">cafe</option>
+                        <option value="food">food</option>
+                        <option value="hospital">hospital</option>
+                        <option value="store">store</option>
+                    </select>
+                </div>
+                <br/>
+                <div id="radius">
+                    <label for="gmap_radius">Radius:</label>
+                    <select id="gmap_radius">
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="5000">5000</option>
+                    </select>
+                    <label for="gmap_radius">(meters)</label>
+                </div>
+                <br/><br/>
+                <button onclick="findPlaces(); return false;" style="background-color:#d7e5f5">Search for type</button>
+                <br/><br/>
+
+                <div id="list" class="locationList"></div>
+            </div>
+            <input type="hidden" id="lat" name="lat" value="40.7143528" />
+            <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+
+        </div>
+
+
+        <div id="container" class="container">
+            <div id="gmap_canvas"></div>
+        </div>
+    </body>
+</html>

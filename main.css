@@ -1,0 +1,39 @@
+
+.container {
+    height: 700px;
+    margin: 20px auto;
+    position: relative;
+    width: 900px;
+}
+#gmap_canvas {
+    height: 700px;
+    width: 900px;
+}
+
+
+.button {
+    border-top: 1px solid #abbbcc;
+    border-left: 1px solid #a7b6c7;
+    border-bottom: 1px solid #a1afbf;
+    border-right: 1px solid #a7b6c7;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #1a3e66;
+    line-height: 1;
+    margin-bottom: 5px;
+    padding: 6px 0 7px 0;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    width: 250px;
+    float: left;
+}
+
+
+.locationList{
+    text-align:left;
+    line-height: 2;
+}
