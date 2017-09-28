@@ -1,4 +1,4 @@
-## Zenefits Coding Challenge
+## Google Maps Simulation
 
 I used the Google Places API in connection to create an interactive location search front end.
 
