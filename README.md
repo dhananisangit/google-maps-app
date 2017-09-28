@@ -2,7 +2,7 @@
 
 I used the Google Places API in connection to create an interactive location search front end.
 
-[Live][url]
+[Live]
 [url]: https://googleplaceslibrarydemo.herokuapp.com/index.html
 
 
